@@ -27,14 +27,17 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Products</h2>
-<c:forEach var="product" items="${products}" >
-  <div style="margin-top: 2em">
-    <h3 style="color: white; background: cornflowerblue">Name: ${product.getProduct()}</h3>
-    <h3>Price: $${product.getCostInCent()/100}</h3>
-  </div>
+<div class="container">
+  <h2>Products</h2>
 
-</c:forEach>
+  <c:forEach var="product" items="${products}" >
+    <div style="margin-top: 2em">
+      <h3 style="color: white; background: cornflowerblue">Name: ${product.getProduct()}</h3>
+      <h3>Price: $${product.getCostInCent()/100}</h3>
+    </div>
+  </c:forEach>
+</div>
+
 
 
 </body>

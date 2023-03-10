@@ -9,19 +9,27 @@
 <html>
 <head>
     <title>Food Order</title>
+  <%@ include file="partials/head.jsp" %>
+
 </head>
 <body>
-  <h1>Food Order Form</h1>
-  <form action="/foods.jsp">
-    <select name="food" id="food">
-      <option value="dairy">Dairy</option>
-      <option value="meat">Meat</option>
-      <option value="rhubarb">rhubarb</option>
+<%@ include file="partials/navbar.jsp" %>
+<div class="container">
+  <div class="row">
+    <h1>Food Order Form</h1>
+    <form action="/foods.jsp">
+      <select name="food" id="food">
+        <option value="dairy">Dairy</option>
+        <option value="meat">Meat</option>
+        <option value="rhubarb">rhubarb</option>
 
-    </select>
-    <button>Submit</button>
+      </select>
+      <button>Submit</button>
 
-  </form>
+    </form>
+  </div>
+</div>
+
 
 </body>
 </html>
