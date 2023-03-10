@@ -29,8 +29,12 @@
 <html>
 <head>
     <title>Title</title>
+    <%@ include file="partials/head.jsp" %>
+
 </head>
 <body>
+<%@ include file="partials/navbar.jsp" %>
+
     <h1>People</h1>
     <c:forEach var="person" items="${people}">
         <h3>

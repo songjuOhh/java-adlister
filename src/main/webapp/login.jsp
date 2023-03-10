@@ -64,9 +64,13 @@
 %>
 <html>
 <head>
-    <title>Title</title>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="Login"/>
+    </jsp:include>
 </head>
 <body>
+<%@ include file="partials/navbar.jsp" %>
+
 <form method="POST" action="/login.jsp" >
   <label for="username">Username</label><input type="text" id="username" name="username" placeholder="username"><br>
   <label for="password">Password</label><input type="password" id="password" name="password" placeholder="password">

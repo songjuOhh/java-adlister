@@ -6,14 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-  <style>
 
-  </style>
-</head>
-<body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -31,5 +24,3 @@
   </div>
 </nav>
 
-</body>
-</html>

@@ -14,7 +14,7 @@
 </head>
 <body>
 <%@ include file="partials/navbar.jsp" %>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <h1>Food Order Form</h1>
     <form action="/foods.jsp">
