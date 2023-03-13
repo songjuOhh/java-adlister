@@ -12,8 +12,16 @@
   <%@ include file="partials/head.jsp" %>
 
 </head>
+
+<%--<head>--%>
+<%--  <jsp:include page="partials/head.jsp">--%>
+<%--    <jsp:param name="title" value="Pizza"/>--%>
+<%--  </jsp:include>--%>
+<%--</head>--%>
+
 <body>
 <%@ include file="partials/navbar.jsp" %>
+
 <div class="container-fluid">
   <div class="row">
     <h1>Food Order Form</h1>
@@ -22,7 +30,6 @@
         <option value="dairy">Dairy</option>
         <option value="meat">Meat</option>
         <option value="rhubarb">rhubarb</option>
-
       </select>
       <button>Submit</button>
 

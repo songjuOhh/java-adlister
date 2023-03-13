@@ -22,6 +22,7 @@ public class PersonIndexServlet extends HttpServlet {
         ));
         request.setAttribute("people", people);
         request.getRequestDispatcher("/people.jsp").forward(request, response); // Fetching a file(/names.jsp) to a server
+
     }
 
     @Override
