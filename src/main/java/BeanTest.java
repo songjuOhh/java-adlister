@@ -4,6 +4,15 @@ import java.util.List;
 public class BeanTest {
     public static void main(String[] args) {
         Album album1 = new Album("Beenzino","Dali Van Picasso","hip-hop");
+        Album album2 = new Album("NewJeans","Hype Boy","k-pop");
+
+        ArrayList<Album> albums = new ArrayList<>(List.of(album1, album2));
+
+        for(Album album : albums){
+            System.out.println("\nArtist: "+album.getArtist()+"\nName:"+album.getName()+"\nGenre: "+album.getGenre());
+        }
+
+
         Author author1 = new Author("Les", "Paul");
         Author author2 = new Author("Booker T.", "Washington");
 
@@ -21,8 +30,9 @@ public class BeanTest {
         System.out.println(quote2.getQuote() +" by "+author2.getFirstName() + author2.getLastName());
 
 
+
         for(Quote quote : quotes){
-            System.out.println(quote.getQuote() +" by "+ quote.getName().getFirstName() +" "+ quote.getName().getLastName());
+            System.out.println("\n"+quote.getQuote() +"\n by "+ quote.getName().getFullName()+"\n");
         }
     }
 }

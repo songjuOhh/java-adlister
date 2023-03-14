@@ -3,6 +3,8 @@ public class Author {
     private String firstName;
     private String lastName;
 
+    private String fullName;
+
 
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
@@ -23,5 +25,14 @@ public class Author {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public String getFullName(){
+        fullName = firstName+" "+lastName;
+        return fullName;
+    }
+
+    public void setFullName(String firstName, String lastName) {
+        fullName = firstName + lastName;
     }
 }

@@ -1,6 +1,6 @@
 public class Quote {
 
-    Author name;
+    private Author name;
     private String quote;
 
 

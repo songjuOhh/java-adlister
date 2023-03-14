@@ -1,4 +1,4 @@
-<%@ page import="model.Product" %>
+<%@ page import="models.Product" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Arrays" %><%--
@@ -16,10 +16,10 @@
   Product sofa = new Product("Sofa", 50000);
   Product desk = new Product("Desk", 30000);
 
-  List<Object> products = new ArrayList<>(Arrays.asList(
+  List<Object> product2s = new ArrayList<>(Arrays.asList(
           laptop,sofa,desk
   ));
-  request.setAttribute("products", products);
+  request.setAttribute("product2s", product2s);
 
 %>
 <html>
@@ -30,10 +30,10 @@
 <div class="container">
   <h2>Products</h2>
 
-  <c:forEach var="product" items="${products}" >
+  <c:forEach var="product2" items="${product2s}" >
     <div style="margin-top: 2em">
-      <h3 style="color: white; background: cornflowerblue">Name: ${product.getProduct()}</h3>
-      <h3>Price: $${product.getCostInCent()/100}</h3>
+      <h3 style="color: white; background: cornflowerblue">Name: ${product2.getProduct()}</h3>
+      <h3>Price: $${product2.getCostInCent()/100}</h3>
     </div>
   </c:forEach>
 </div>
