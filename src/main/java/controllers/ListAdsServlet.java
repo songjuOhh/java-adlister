@@ -21,8 +21,6 @@ public class ListAdsServlet extends HttpServlet {
 
         request.setAttribute("ads", ads);
         request.getRequestDispatcher("/ads/index.jsp").forward(request, response);
-
-
     }
 
     @Override
