@@ -1,3 +1,8 @@
+package dao;
+
+import models.Ads;
+import models.Ad;
+
 import java.util.ArrayList;
 import java.util.List;
 
