@@ -1,10 +1,9 @@
 package dao;
 
 import com.mysql.cj.jdbc.Driver;
-import controllers.Config;
+import models.Config;
 import models.Ad;
 import models.Ads;
-import models.Album;
 
 import java.sql.*;
 import java.util.ArrayList;

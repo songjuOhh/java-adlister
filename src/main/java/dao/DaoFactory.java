@@ -1,8 +1,7 @@
 package dao;
 
-import controllers.Config;
+import models.Config;
 import models.Ads;
-import models.Ad;
 
 public class DaoFactory {
     private static Ads adsDao;
