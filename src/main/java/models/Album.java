@@ -31,6 +31,8 @@ public class Album implements Serializable {
         this.genre = genre;
     }
 
+
+
     public long getId() {
         return id;
     }
